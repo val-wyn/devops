@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::group(['prefix'=>'users'], function(){
-    Route::get('/{q?}',                               [UserController::class, 'index']);
+    Route::get('/',                               [UserController::class, 'index']);
     Route::any('/show',                         [UserController::class, 'show']);
 
 

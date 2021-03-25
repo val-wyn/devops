@@ -9,21 +9,10 @@ use Illuminate\Support\Facades\Response;
 class UserController extends Controller
 {
 
-//    public function index(Request $request)
-//    {
-//        if (request('q') ==! null){
-//            $users = User::where('first', 'like', '%'.request('q').'%')
-//                ->orWhere("last", "like", '%'.request('q').'%')
-//                ->orWhere("street", "like", '%'.request('q').'%')
-//                ->orWhere("city", "like", '%'.request('q').'%')
-//                ->orWhere("zip", "like", '%'.request('q').'%')->get();
-//            return response()->json($users);
-//        }
-//        else {
-//            $users = User::all();
-//            return response()->json($users);
-//        }
-//    }
+    public function index()
+    {
+        return User::all();
+    }
 
     public function show(Request $request){
 
