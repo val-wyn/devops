@@ -13,10 +13,18 @@ class userTest extends TestCase
      *
      * @return void
      */
-    public function test_example()
-    {
-        $response = $this->get('/api/users/');
+//    public function test_example()
+//    {
+//        $response = $this->get('/api/users/');
+//
+//        $response->assertStatus(200);
+//    }
 
-        $response->assertStatus(200);
+    public function testEmpty()
+    {
+        $stack = [];
+        $this->assertEmpty($stack);
+
+        return $stack;
     }
 }
