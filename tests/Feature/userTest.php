@@ -27,4 +27,5 @@ class userTest extends TestCase
 
         return $stack;
     }
+
 }
