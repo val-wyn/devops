@@ -28,12 +28,4 @@ class userTest extends TestCase
         return $stack;
     }
 
-    public function testPush(array $stack)
-    {
-        array_push($stack, 'foo');
-        $this->assertSame('foo', $stack[count($stack)-1]);
-        $this->assertNotEmpty($stack);
-
-        return $stack;
-    }
 }
